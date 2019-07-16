@@ -1,0 +1,12 @@
+Security exception: You either need MANAGE_USERS or CREATE_USERS permission to: query user
+
+java.lang.SecurityException: You either need MANAGE_USERS or CREATE_USERS permission to: query user
+	at com.android.server.pm.UserManagerService.checkManageOrCreateUsersPermission(UserManagerService.java:1654)
+	at com.android.server.pm.UserManagerService.getUserInfo(UserManagerService.java:894)
+	at android.os.UserManager.getUserInfo(UserManager.java:1250)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:273)
+	at android.os.ShellCommand.exec(ShellCommand.java:96)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:51)
+	at android.os.Binder.shellCommand(Binder.java:623)
+	at android.os.Binder.onTransact(Binder.java:521)
+	at android.os.Binder.execTransact(Binder.java:738)
